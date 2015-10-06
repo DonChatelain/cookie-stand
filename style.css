@@ -1,0 +1,39 @@
+body {
+	background-color: #E5CACA;
+}
+
+a {
+	color: black;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: Montserrat;
+	font-weight: lighter;
+}
+
+h2{
+	font-family: Arial;
+	color: #4F2727;
+	font-weight: lighter;
+}
+
+p {
+	font-family: Georgia;
+}
+
+table {
+	background-color: #C29A9A;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+td {
+	padding: 20px;
+	border-bottom: 1px solid #7D4E4E;
+	border-right: 1px solid #7D4E4E;
+	color: #FFF2F2;
+	font-family: Arial;
+	text-shadow: 2px 1px 1px #7D4E4E;
+}
+
