@@ -21,12 +21,12 @@ h1 {
 	top: -20px;
 }
 h1 span {
-	font-family: Pacifico;
+	font-family: 'Pacifico';
 	font-weight: lighter;
 }
 
 h2{
-	font-family: Montserrat;
+	font-family: 'Montserrat';
 	color: #4F2727;
 	font-weight: lighter;
 	text-align: center;
