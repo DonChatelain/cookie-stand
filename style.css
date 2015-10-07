@@ -1,50 +1,119 @@
 body {
-	/*background-color: #E5CACA;*/
-	background: -webkit-linear-gradient(bottom,#E5CACA, #FFF3F3);
-	background: -moz-linear-gradient(bottom,#E5CACA, #FFF3F3);
-	height: 100%;
-	overflow: hidden;
+	background: #FFF3F3 no-repeat center center fixed;
+	font-family: Georgia;
+	min-width: 1130px;
 }
+#head-contain {
+	position: relative;
+	top: -50px;
+	left: -10px;
+	width: 105%;
+	height: 300px;
+	background-image: url("pikesbg.jpg");
+	background-position: -180px -100px;
+	background-size: ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 
-a {
-	color: black;
-	font-weight: bold;
 }
-
+img {
+	height: 120px;
+	position: relative;
+	float: right;
+	clear: right;
+	top: 25px;
+	right: -100px;
+}
 h1 {
 	font-family: 'Courgette';
 	font-weight: ;
-	color: #4F2727;
-	text-align: center;
-	font-size: 40px;
+	color: #AA3939;
+	text-align: left;
+	font-size: 55px;
 	position: relative;
-	top: -20px;
+	margin-left: 150px;
+	text-shadow: 2px 1px 2px #666;
 }
 h1 span {
 	font-family: 'Pacifico';
 	font-weight: lighter;
 }
-
-h2{
-	font-family: 'Montserrat';
-	color: #4F2727;
+#head-contain h2{
+	font-family: 'Pacifico';
+	color: #415F5F;
 	font-weight: lighter;
-	text-align: center;
+	font-size: 26px;
+	text-align: right;
 	position: relative;
-	margin-top: 50px;
+	top: -20px;
+	right: 350px;
+	line-height: 18px;
 }
+#head-contain h2 span {
+	position: relative;
+	left: 50px;
+}
+nav {
+	width: 100%;
+	height: 50px;
+	display: block;
+}
+#nav-bar {
+	width: 105%;
+	height: 50px;
+	background-color: #091708;
+	position: absolute;
+	top: 300px;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 3px 3px 3px #666;
+}
+nav li {
+	display: inline;
 
+}
+nav ul {
+	margin-left: -80px;
+	list-style: none;
+	display: inline;
+
+}
+nav a {
+	font-size: 20px;
+	font-family: 'Georgia';
+	padding-right: 90px;
+	text-decoration: none;
+	color: #B1CDE3;
+	
+	position: relative;
+	top: 12px;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+h2 {
+	position: relative;
+	margin-top: 45px;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: 30px;
+}
+ul {
+	position: relative;
+}
 p {
-	font-family: Georgia;
+	
 }
-
+a {
+	color: #415F5F;
+	font-weight: bold;
+}
 table {
 	background-color: #C29A9A;
 	margin-right: auto;
 	margin-left: auto;
 	position: relative;
 }
-
 td {
 	padding: 20px;
 	border-bottom: 1px solid #7D4E4E;
@@ -55,12 +124,7 @@ td {
 	font-size: 20px;
 }
 
-img {
-	height: 120px;
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-}
+
 
 footer {
 	text-align: right;
