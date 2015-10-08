@@ -14,7 +14,7 @@ CookieStand.prototype.randCustHour = function() {
 };
 
 CookieStand.prototype.makeTR = function(rowNum) {
-	row = table.insertRow(rowNum);
+	var row = table.insertRow(rowNum);
 	row.insertCell(0).innerHTML = this.storeLocation;
 
 	for (var i=0; i < this.hours.length; i++) {
