@@ -17,6 +17,11 @@ CookieStand.prototype.makeTR = function(rowNum) {
 	var row = table.insertRow(rowNum);
 	row.insertCell(0).innerHTML = this.storeLocation;
 
+	//For LocationTable procedural generation
+	// var locRow = locTable.insertRow(rowNum);
+	// locRow.insertCell(0).innerHTML = this.storeLocation;
+	// locRow.insertCell(1).innerHTML = "10am - 6pm";
+	
 	for (var i=0; i < this.hours.length; i++) {
 		this.hourlySales[i] = (Math.floor(this.randCustHour() * this.avgCookiesCust));
 
@@ -32,6 +37,10 @@ var seaTac = new CookieStand('SeaTac Airport', 6, 44, 1.2);
 var southCenter = new CookieStand('South Center Mall', 11, 38, 1.9);
 var bellevue = new CookieStand('Bellevue Square',20, 48, 3.3);
 var alki = new CookieStand('Alki Beach', 3, 24, 2.6);
+
+//for procedurally filling LocationTable
+// var locTable = document.getElementById('locationTable');
+// var locRowHead = locTable.insertRow(0);
 
 var table = document.getElementById('table');
 var rowHead = table.insertRow(0);

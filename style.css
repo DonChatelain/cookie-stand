@@ -1,5 +1,5 @@
 html {
-
+	background-color: #D4E6E6;
 }
 body {
 	font-family: Georgia;
@@ -14,8 +14,8 @@ body {
 	left: -10px;
 	width: 105%;
 	height: 250px;
-	background-image: url("pikesbg.jpg");
-	background-position: -180px -100px;
+	background-image: url("seattle.jpg");
+	background-position: 0px -70px;
 	background-size: ;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -30,7 +30,7 @@ img {
 	right: -100px;
 }
 h1 {
-	font-family: 'Courgette';
+	font-family: 'Courgette', serif;
 	font-weight: ;
 	color: #AA3939;
 	text-align: left;
@@ -41,11 +41,11 @@ h1 {
 	top: 20px;
 }
 h1 span {
-	font-family: 'Pacifico';
+	font-family: 'Pacifico', serif;
 	font-weight: lighter;
 }
 #head-contain h2{
-	font-family: 'Pacifico';
+	font-family: 'Pacifico', serif;
 	color: #415F5F;
 	font-weight: lighter;
 	font-size: 26px;
@@ -87,20 +87,23 @@ nav ul {
 nav a {
 	font-size: 20px;
 	font-family: 'Georgia';
+	font-weight: lighter;
+	letter-spacing: 5px;
 	padding-right: 90px;
 	text-decoration: none;
-	color: #B1CDE3;
+	color: #fff;
 	position: relative;
 	top: 12px;
 }
 nav a:hover {
 	text-decoration: underline;
+	color: #AA3939;
 }
 #content {
-	background-color: ;
+	background-color: #fff;
 	width: 960px;
 	margin: auto;
-	
+	padding: 30px;
 	left: 100px;
 }
 #articles {
@@ -119,6 +122,10 @@ div#articles img{
 	float: none;
 	padding-bottom: 40px;
 }
+div#articles h2 {
+	color: #415F5F;
+	font-family: 'Montserrat'sans-serif;
+}
 a {
 	color: #415F5F;
 	font-weight: bold;
@@ -132,22 +139,25 @@ aside h2 {
 	position: relative;
 	margin-top: 60px;
 	text-align: center;
-	font-family: 'Montserrat';
+	color: #415F5F;
+	font-family: 'Montserrat',sans-serif;
 	font-size: 30px;
 }
  aside ul#location {
 	position: relative;
 	list-style: none;
-	right: 80px;
+	right: 40px;
 }
 aside li.location {
+	font-style: bold;
 	font-family: Arial;
 	font-size: 18px;
-	text-align: right;
+	text-align: left;
 }
-li.location span {
+.right-align {
+	text-align: right;
 	font-size: 18px;
-	margin-left: 25px;
+	margin-left: 0px;
 }
 aside img{
 	float: none;
@@ -160,6 +170,13 @@ table {
 	margin-left: auto;
 	position: relative;
 }
+table#locationTable {
+	background-color: #AA3939;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	border: none;
+}
 td {
 	padding: 20px;
 	border-bottom: 1px solid #7D4E4E;
@@ -169,7 +186,14 @@ td {
 	text-shadow: 2px 1px 1px #7D4E4E;
 	font-size: 20px;
 }
-
+table#locationTable td {
+	padding: 20px 8px 20px 8px;
+	font-family: Georgia;
+	/*text-shadow: 2px 1px 1px #7D4E4E;*/
+	font-size: 16px;
+	border: none;
+	text-align: left;
+}
 
 
 footer {
