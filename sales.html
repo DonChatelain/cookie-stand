@@ -21,24 +21,22 @@
 	<table id="table" cellspacing="0px">
 	</table>
 
-	<form id="addStore" action="" method="get">
-		<fieldset>
-			<legend>Add New Store</legend>
-			<p>Store Location: 
-				<input id="location-name" />
-			</p>
-			<p>Minimum Customers Per Hour: 
-				<input id="min-cust-hour" />
-			</p>
-			<p>Maximum Customers Per Hour:
-				<input id="max-cust-hour" />
-			</p>
-			<p>Average Cookies Per Customer: 
-				<input id="avg-cookies-cust" />
-			</p>
-			<br>
-			<input type="submit" name="add-to-table" value="Add Store" />
-		</fieldset>
+	<form id="add-store-form">
+		<legend>Add New Store</legend>
+		<p>Store Location: 
+			<input id="location-name" value="" />
+		</p>
+		<p>Minimum Customers Per Hour: 
+			<input id="min-cust-hour" value="" />
+		</p>
+		<p>Maximum Customers Per Hour:
+			<input id="max-cust-hour" value="" />
+		</p>
+		<p>Average Cookies Per Customer: 
+			<input id="avg-cookies-cust" value="" />
+		</p>
+		<br>
+		<input type="button" id="addButton" value="Add Store" />
 	</form>
 
 	<footer>
