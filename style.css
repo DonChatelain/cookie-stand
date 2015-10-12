@@ -14,7 +14,7 @@ body {
 	left: -10px;
 	width: 105%;
 	height: 250px;
-	background-image: url("seattle.jpg");
+	background-image: url(img/seattle.jpg);
 	background-position: 0px -70px;
 	background-size: ;
 	background-repeat: no-repeat;
@@ -169,7 +169,7 @@ aside img{
 }
 
 table {
-	
+	border: none;
 	margin-right: auto;
 	margin-left: auto;
 	position: relative;
@@ -179,7 +179,7 @@ table#locationTable {
 	margin-right: auto;
 	margin-left: auto;
 	position: relative;
-	border: none;
+	border-collapse: collapse;
 }
 tr.even {
 	background-color: #D46A6A;
@@ -189,19 +189,18 @@ tr.odd {
 }
 td {
 	padding: 20px;
-	border-bottom: 1px solid #7D4E4E;
-	border-right: 1px solid #7D4E4E;
 	color: #FFF;
 	font-family: Arial;
 	text-shadow: 2px 1px 1px #7D4E4E;
 	font-size: 20px;
 }
 table#locationTable td {
-	padding: 20px 8px 20px 8px;
+	padding: 20px;
 	font-family: Georgia;
-	/*text-shadow: 2px 1px 1px #7D4E4E;*/
+	border: 1px solid #fff;
+	border-spacing: 1px;
+	border-collapse: collapse;
 	font-size: 16px;
-	border: none;
 	text-align: left;
 }
 form {
