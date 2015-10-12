@@ -7,10 +7,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Pacifico|Courgette|Permanent+Marker' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<img src="img/salmon.png" />
+	<img src="img/salmon-flip.png" />
 	
 	<h1>Pat's <span>World Famous</span> Salmon Cookies</h1>
-	<h2>Cookies Sold Hourly By Location</h2>
+	<h2 class="sales">Cookies Sold Hourly By Location</h2>
 	
 	<ul id="pike-list"></ul>
 	<ul id="seatac-list"></ul>
@@ -18,25 +18,27 @@
 	<ul id="bellevue-list"></ul>
 	<ul id="alki-list"></ul>
 
-	<table id="table" cellspacing="0px">
+	<table id="table">
 	</table>
 
 	<form id="add-store-form">
-		<legend>Add New Store</legend>
-		<p>Store Location: 
-			<input id="location-name" value="" />
-		</p>
-		<p>Minimum Customers Per Hour: 
-			<input id="min-cust-hour" value="" />
-		</p>
-		<p>Maximum Customers Per Hour:
-			<input id="max-cust-hour" value="" />
-		</p>
-		<p>Average Cookies Per Customer: 
-			<input id="avg-cookies-cust" value="" />
-		</p>
-		<br>
-		<input type="button" id="addButton" value="Add Store" />
+		<fieldset>
+			<h3>Add New Store</h3>
+			<p>Store Location: 
+				<input id="location-name" value="" />
+			</p>
+			<p>Minimum Customers Per Hour: 
+				<input id="min-cust-hour" value="" />
+			</p>
+			<p>Maximum Customers Per Hour:
+				<input id="max-cust-hour" value="" />
+			</p>
+			<p>Average Cookies Per Customer: 
+				<input id="avg-cookies-cust" value="" />
+			</p>
+			<br>
+			<input type="button" id="addButton" value="Add Store" />
+		</fieldset>
 	</form>
 
 	<footer>

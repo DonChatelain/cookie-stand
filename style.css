@@ -25,9 +25,9 @@ img {
 	height: 120px;
 	position: relative;
 	float: right;
-	clear: right;
 	top: 25px;
 	right: -100px;
+	z-index: 2;
 }
 h1 {
 	font-family: 'Courgette', serif;
@@ -39,6 +39,7 @@ h1 {
 	margin-left: 150px;
 	text-shadow: 2px 1px 2px #666;
 	top: 20px;
+	white-space: nowrap;
 }
 h1 span {
 	font-family: 'Pacifico', serif;
@@ -97,7 +98,7 @@ nav a {
 }
 nav a:hover {
 	text-decoration: underline;
-	color: #AA3939;
+	color: #D46A6A;
 }
 #content {
 	background-color: #fff;
@@ -122,9 +123,12 @@ div#articles img{
 	float: none;
 	padding-bottom: 40px;
 }
-div#articles h2 {
+h2 {
 	color: #415F5F;
 	font-family: 'Montserrat'sans-serif;
+}
+h2.sales {
+	text-align: center;
 }
 a {
 	color: #415F5F;
@@ -165,7 +169,7 @@ aside img{
 }
 
 table {
-	background-color: #C29A9A;
+	
 	margin-right: auto;
 	margin-left: auto;
 	position: relative;
@@ -177,11 +181,17 @@ table#locationTable {
 	position: relative;
 	border: none;
 }
+tr.even {
+	background-color: #D46A6A;
+}
+tr.odd {
+	background-color: #AA3939;
+}
 td {
 	padding: 20px;
 	border-bottom: 1px solid #7D4E4E;
 	border-right: 1px solid #7D4E4E;
-	color: #FFF2F2;
+	color: #FFF;
 	font-family: Arial;
 	text-shadow: 2px 1px 1px #7D4E4E;
 	font-size: 20px;
@@ -194,7 +204,24 @@ table#locationTable td {
 	border: none;
 	text-align: left;
 }
-
+form {
+	margin-top: 25px;
+	text-align: ;
+}
+fieldset p, h3 {
+	text-align: left;
+	color: #415F5F;
+	font-family: 'Montserrat';
+}
+p input {
+	margin-left: 40px;
+}
+fieldset {
+	width: 360px;
+	margin: 0 auto;
+	display: block;
+	
+}
 
 footer {
 	height: 200px;
@@ -203,7 +230,7 @@ footer {
 	font-family: Arial;
 	position: relative;
 	top: 15px;
-	color: green;
+	color: #415F5F;
 	margin-top: 100px;
 	padding-bottom: 50px;
 	clear: both;

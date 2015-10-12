@@ -14,28 +14,33 @@ CookieStand.prototype.randCustHour = function() {
 }; //function to produce random customer turn out in one hour
 
 CookieStand.prototype.makeTR = function() {
+	var table = document.getElementById('table');
 	var row = table.insertRow();
 	row.insertCell().innerHTML = this.storeLocation;
 	
 	for (var i=0; i < this.hours.length; i++) {
 		this.hourlySales[i] = (Math.floor(this.randCustHour() * this.avgCookiesCust));
-
 		this.totalSales += this.hourlySales[i];
-
 		row.insertCell().innerHTML = this.hourlySales[i];
-	}
+	} //Inserts data into rows
 	row.insertCell().innerHTML = this.totalSales;
-};
 
+	var rows = document.getElementsByTagName('tr');
+	for (var i = 0; i < rows.length; i++) {
+		if (i % 2 === 0) {
+			rows[i].className = 'even';
+		} else {
+			rows[i].className = 'odd';
+		}
+	} //sets class names to odd and even rows - for coloring
+};
 
 var pikePlace = new CookieStand('Pike Place Market', 17, 88, 5.2);
 var seaTac = new CookieStand('SeaTac Airport', 6, 44, 1.2);
 var southCenter = new CookieStand('South Center Mall', 11, 38, 1.9);
 var bellevue = new CookieStand('Bellevue Square',20, 48, 3.3);
 var alki = new CookieStand('Alki Beach', 3, 24, 2.6);
-
-
-
+	
 var createTable = function() {
 	var table = document.getElementById('table');
 	var rowHead = table.insertRow();
@@ -56,35 +61,24 @@ southCenter.makeTR();
 bellevue.makeTR();
 alki.makeTR();
 
-
-
-
 var addStore = function() {
 	var elLocation = document.getElementById('location-name').value;
-	var elMinCustHour = document.getElementById('min-cust-hour').value;
-	var elMaxCustHour = document.getElementById('max-cust-hour').value;
-	var elAvgCookiesCust = document.getElementById('avg-cookies-cust').value;
-	var form = document.getElementById('add-store-form');
+	var elMinCustHour = parseInt(document.getElementById('min-cust-hour').value);
+	var elMaxCustHour = parseInt(document.getElementById('max-cust-hour').value);
+	var elAvgCookiesCust = parseInt(document.getElementById('avg-cookies-cust').value);
 
-	// var newStore = new CookieStand(elLocation.value,elMinCustHour.value,elMaxCustHour.value,elAvgCookiesCust.value);
 	var newStore = new CookieStand(elLocation,elMinCustHour,elMaxCustHour,elAvgCookiesCust);
 	newStore.makeTR();
-	console.log("New store's minimum Customers per Hour is " + newStore.minCustHour);
-	console.log("New store's maximum Customers per Hour is " + newStore.maxCustHour);
-	console.log("New store's average Cookies per Customer is " + newStore.avgCookiesCust);
-	console.log("New store's random hourly customer turnout is " + newStore.randCustHour());
 
-
-
-	elLocation.value = null;
-	elMinCustHour.value = null;
-	elMaxCustHour.value = null;
-	elAvgCookiesCust.value = null;	
+	document.getElementById('location-name').value = null;
+	document.getElementById('min-cust-hour').value = null;
+	document.getElementById('max-cust-hour').value = null;
+	document.getElementById('avg-cookies-cust').value = null;	
 	//sets form values back to blank after added to table
 };
 
 var button = document.getElementById('addButton');
-button.addEventListener('click',addStore);
+button.addEventListener('click', addStore);
 
 
 
